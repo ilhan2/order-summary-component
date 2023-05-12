@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(./images/pattern-background-desktop.svg) no-repeat;
+  background-color: var(--pale-blue);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.container {
+  width: 400px;
+  background-color: var(--very-pale-blue);
+  border-radius: 16px;
+  text-align: center;
+}
+.card .hero {
+  width: 100%;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  padding-bottom: 25px;
+}
+
+.text-box h1 {
+  font-weight: 900;
+  color: var(--dark-blue);
+  padding-bottom: 10px;
+}
+.text-box p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--desaturated-blue);
+  padding-bottom: 30px;
+}
+
+.plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1px 40px;
+  padding-bottom: 30px;
+}
+.plan a:hover {
+  text-decoration: none;
+  color: var(--desaturated-blue);
+}
+.plan .price-plan {
+  padding-right: 70px;
+}
+.plan .price-plan h3 {
+  color: var(--dark-blue);
+  font-weight: 700;
+  font-size: 18px;
+}
+.plan .price-plan p {
+  color: var(--desaturated-blue);
+}
+
+.buttons a {
+  display: block;
+  text-decoration: none;
+  margin: 0 auto;
+}
+.buttons .fond-blue {
+  background-color: var(--bright-blue);
+  width: 80%;
+  color: var(--pale-blue);
+  padding: 10px 30px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.buttons .fond-blue:hover {
+  color: var(--very-pale-blue);
+  background-color: var(--desaturated-blue);
+}
+.buttons .solo {
+  margin-bottom: 20px;
+  color: var(--desaturated-blue);
+}
+.buttons .solo:hover {
+  color: var(--dark-blue);
+}
